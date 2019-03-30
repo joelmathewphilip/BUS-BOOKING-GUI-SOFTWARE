@@ -1,0 +1,24 @@
+database name:bus
+create the following tables in it.
+1)BusDetails // DETAILS OF ALL THE BUSES
+BUSID VARCHAR(20) NAME VARCHAR(20) DEPARTURE VARCHAR(20) DESTINATION VARCHAR(20) PRICE INT(10)
+2)bus1 //LIST OF ALL USERS AND THEIR RIDE DETAILS
+PNR	VARCHAR(30), BUSID	VARCHAR(30), NAME	VARCHAR(30), SEAT INT(10)
+3)LoginDetails// LIST OF ALL REGISTERED USERS
+Name	VARCHAR	(30), Username	VARCHAR(30), Password	VARCHAR	(30)
+4) LogDetails//TELLS WHICH USER IS CURRENTLY LOGGED IN
+ACTIVE VARCHAR (30)
+
+In XAMPP go to phpmyadmin to manage tables and databases of your projects. Create the above mentioned database 
+and tables.
+ENSURE THAT THE myconn has the same link as that of your database.
+In Netbeans:
+1) Open the project
+2) Go to PROJECTS tab on the left
+3) Right-click on the libraries and choose the MySQL JDBC Driver to add it.
+4) Now go to Database and chhose new connection  and in the Driver section, choose the MySQL(Connector/J Driver).
+5) In the next page, fill Host name(localhost by default),database name, user name and password(by default, leave the password field empty).
+6) Then test the connection
+7) If successful choose next untill the connection is created. Then on the connection, right-click,choose properties and select the Display name field.
+8) copy the url to the statement DriverManager.getConnection("copy the url","the username of the database","the password of the database").
+9) Its done.
